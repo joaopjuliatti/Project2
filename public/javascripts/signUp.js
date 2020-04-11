@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
     console.log('TA ENTRANDO')
     const formContainer = document.getElementById('addition-inputs');
     formContainer.innerHTML = `
+      <input type="text" name="role" value="MEDICO" hidden>
       <input type="text" name="CRM" placeholder="Digite seu CRM">
       <div>
         <h3>Principal Endereço de endereço de atendimento</h3>
@@ -20,6 +21,7 @@ window.addEventListener('load', () => {
   document.getElementById('paciente-sign-up-buttom').addEventListener('click', function (event) {
     const formContainer = document.getElementById('addition-inputs');
     formContainer.innerHTML = `
+      <input type="text" name="role" value="PACIENTE" hidden>
       <input type="text" name="CPF" placeholder="Digite seu CPF">
       <div>
         <h3>Principal Endereço de endereço de atendimento</h3>
